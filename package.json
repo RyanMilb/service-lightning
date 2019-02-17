@@ -1,0 +1,11 @@
+{
+  "name": "your-package-name",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "mesg-js": "^2.0.1",
+    "node-fetch": "^2.3.0",
+    "puppeteer": "^1.11.0",
+    "request": "^2.88.0"
+  }
+}

@@ -1,0 +1,26 @@
+name: LightningService
+sid: lightning-service
+description: " This service will take lightning invoices and pay them using opennode.co api"
+tasks:
+  payInvoice:
+    inputs:
+      apikey:
+        type: String
+      invoice:
+        type: String
+      invoiceId:
+        type: String
+    outputs:
+      success:
+        data:
+          message:
+            type: String
+      error:
+        data:
+          error:
+            type: String
+events:
+  invoicePaid:
+    data:
+      success:
+        type: Boolean

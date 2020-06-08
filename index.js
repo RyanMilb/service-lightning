@@ -1,4 +1,4 @@
-const mesg = require('mesg-js').service()
+const liteflow = new (require('@liteflow/service'))()
 var request = require('request');
 
 const payInvoiceHandler = async (inputs, outputs) => {
@@ -35,7 +35,7 @@ const payInvoiceHandler = async (inputs, outputs) => {
   }
 }
 
-mesg.listenTask({
+liteflow.listenTask({
   payInvoice: payInvoiceHandler
 })
 console.log('Listening tasks...');
